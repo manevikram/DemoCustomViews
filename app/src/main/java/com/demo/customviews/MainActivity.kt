@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnCustomView.setOnClickListener {
             startActivity(Intent(this@MainActivity, CustomViewActivity::class.java))
         }
+
+        binding.btnWithPb.setOnClickListener {
+            startActivity(Intent(this@MainActivity, CustomButtonActivity::class.java))
+        }
     }
 
     override fun onDestroy() {
